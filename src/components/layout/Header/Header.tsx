@@ -1,23 +1,34 @@
-import Link from "next/link"
+"use client"
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
+import { useToggleLanguage } from "@/hooks/useToggleLanguage";
+import ToggleTheme from "@/components/common/ToggleTheme";
+
 
 
 const Header = () => {
 
-    return (
-        <div className="flex justify-between py-8 px-40">
-            <div className="flex gap-8 font-bold text-[16px] text-[#404040]">
-                <Link href={"#heroSection"}>درباره من</Link>
-                <Link href={"#projects"}>پروژه ها</Link>
-                <Link href={"#skills"}>مهارت ها</Link>
-                <Link href={"#resume"}>رزومه</Link>
-                <Link href={"#contactMe"}>ارتباط با من</Link>
-            </div>
-            <div className="flex items-center gap-4">
-                <button></button>
-            </div>
-        </div>
-    )
+  const locale = useLocale();
+  const t = useTranslations("header");
+  const { toggleLanguage } = useToggleLanguage();
 
-}
+  return (
+    <div className="flex justify-between py-8 px-40">
+      <div className="flex gap-8 font-bold text-[16px] text-[#404040]   dark:text-[#F5F5F5]">
+        <Link href="#heroSection">{t("aboutMe")}</Link>
+        <Link href="#projects">{t("projects")}</Link>
+        <Link href="#skills">{t("skills")}</Link>
+        <Link href="#resume">{t("resume")}</Link>
+        <Link href="#contactMe">{t("contactMe")}</Link>
+      </div>
+      <div className="flex items-center gap-4">
+        <button onClick={toggleLanguage} className="cursor-pointer">
+          {locale === "fa" ? "English" : "فارسی"}
+        </button>
+        <ToggleTheme/>
+      </div>
+    </div>
+  );
+};
 
-export default Header
+export default Header;

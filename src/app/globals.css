@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+
 .triangle {
     width: 280px;
     height: 280px;
@@ -11,3 +14,4 @@
     left: 16%;
     z-index: 10;
 }
+

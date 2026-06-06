@@ -1,0 +1,42 @@
+"use client";
+import { useToggleTheme } from "@/hooks/useToggleTheme";
+import Image from "next/image";
+
+
+const ToggleTheme = () => {
+
+  const { theme, setTheme, mounted } = useToggleTheme();
+  if (!mounted) return null;
+  
+  return (
+    <div
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      className="rounded-full  cursor-pointer  "
+    >
+      {theme == "light" ? (
+        <div className="bg-slate-700/50 rounded-full transition-all duration-100 hover:bg-[#644DB3] p-2 flex items-center justify-center">
+          <div className="relative w-5 h-5 md:w-[25px] md:h-[25px]">
+            <Image
+              src="/icons/moon.svg"
+              alt="moon"
+              fill
+              className="object-contain"
+            />
+          </div>
+        </div>
+      ) : (
+        <div className="bg-orange-400 p-2 rounded-full transition-colors flex items-center justify-center">
+          <Image
+            src="/icons/sun.svg"
+            alt="sun"
+            width={25}
+            height={25}
+            className="w-5 h-5   md:w-[25px] md:h-[25px]"
+          />
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default ToggleTheme;

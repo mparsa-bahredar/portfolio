@@ -1,0 +1,16 @@
+{
+    "header":{
+        "aboutMe": "About Me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "resume": "Resume",
+        "contactMe": "Contact Me"
+    },
+    "landing":{
+        "heroSection":{
+            "name": "MohammadParsa Bahredar",
+            "job": "UI/UX Designer",
+            "aboutMeParagraph": "UI/UX Designer with 2+ yrs experience."
+        }
+    }
+}
