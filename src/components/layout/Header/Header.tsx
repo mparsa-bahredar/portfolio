@@ -13,7 +13,7 @@ const Header = () => {
   const { toggleLanguage } = useToggleLanguage();
 
   return (
-    <div className="flex justify-between py-8 px-40">
+    <div className="flex justify-between items-center py-6 px-40 bg-white/10 backdrop-blur-md border-b border-white/20">
       <div className="flex gap-8 font-bold text-[16px] text-[#404040]   dark:text-[#F5F5F5]">
         <Link href="#heroSection">{t("aboutMe")}</Link>
         <Link href="#projects">{t("projects")}</Link>
@@ -22,7 +22,7 @@ const Header = () => {
         <Link href="#contactMe">{t("contactMe")}</Link>
       </div>
       <div className="flex items-center gap-4">
-        <button onClick={toggleLanguage} className="cursor-pointer">
+        <button onClick={toggleLanguage} className="font-medium cursor-pointer   dark:text-[#F5F5F5]">
           {locale === "fa" ? "English" : "فارسی"}
         </button>
         <ToggleTheme/>

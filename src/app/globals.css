@@ -6,12 +6,18 @@
 .triangle {
     width: 280px;
     height: 280px;
-    background: #3b82f6; 
+    background: #0096C7; 
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     border-radius: 48px;
     position: absolute;
     top: 16%;
     left: 16%;
     z-index: 10;
+}
+
+.heroSectionBackground {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../public/images/herosection-background2.avif');
+    background-size: cover;
+    background-position: center;
 }
 

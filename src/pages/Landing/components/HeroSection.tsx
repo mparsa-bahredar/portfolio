@@ -9,11 +9,11 @@ const HeroSection = () => {
     const t = useTranslations("landing.heroSection")
 
     return (
-        <section id="#heroSection" className="flex justify-between items-center py-24 px-56 bg-[#001D3D]">
+        <section id="#heroSection" className="flex justify-between items-center py-28 px-56 heroSectionBackground">
             <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-4">
-                    <h1 className="font-bold text-[32px] text-[#F5F5F5]">{t("name")}</h1>
-                    <span className="font-medium text-[24px] text-[#F5F5F5]">{t("job")}</span>
+                    <h1 className="font-bold text-[36px] text-[#F5F5F5]">{t("name")}</h1>
+                    <span className="font-medium text-[24px] text-[#0096C7]">{t("job")}</span>
                 </div>
                 <p className="font-regular text-[16px] text-[#E4E4E4]">{t("aboutMeParagraph")}</p>
             </div>
