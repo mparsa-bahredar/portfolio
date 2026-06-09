@@ -10,7 +10,16 @@
         "heroSection":{
             "name": "MohammadParsa Bahredar",
             "job": "UI/UX Designer",
-            "aboutMeParagraph": "UI/UX Designer with 2+ yrs experience."
+            "aboutMeParagraph": "UI/UX Designer with 2+ yrs experience.",
+            "contactMeBtn": "Contact Me"
+        },
+        "aboutMe":{
+            "title": "About Me",
+            "paragraph": "UI/UX designer with +2 years of experience in creating visual identity and engaging and usable user interfaces. Along with core design skills, I have practical experience in front-end development. Eager to learn and create products that are both aesthetically strong and meet user needs in the best possible way.",
+            "downloadResume": "Download Resume"
+        },
+        "education":{ 
+            "title": "Education"
         }
     }
 }
