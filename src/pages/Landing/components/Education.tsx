@@ -10,7 +10,7 @@ const Education = () => {
 
     return (
         <div className="flex flex-col items-center gap-12 w-full mt-20">
-            <div className="flex items-center gap-2">
+            <div dir="rtl" className="flex items-center gap-2">
                 <div className="w-0 h-0 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent border-l-[48px] 
                 border-l-[#0096C7] rounded-l-[16px]">
                 </div>            

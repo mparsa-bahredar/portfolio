@@ -33,7 +33,7 @@ export default async function LocaleLayout({children, params,}: {children: React
       lang={locale}
       dir={locale === "fa" ? "rtl" : "ltr"}
     >
-      <body className="dark:bg-[#262626]">
+      <body className="dark:bg-[#000F14]">
         <NextIntlClientProvider messages={messages}>
           <Header/>
           <main>
