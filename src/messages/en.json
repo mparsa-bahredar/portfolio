@@ -18,7 +18,11 @@
             "downloadResume": "Download Resume"
         },
         "education":{ 
-            "title": "Education"
+            "title": "Education",
+            "diploma": "Diploma of Experimental Science",
+            "highSchool": "School of Imam Jafar Sadegh",
+            "bachelor": "Bachelor of Computer Engineering",
+            "university": "University of Azad of Qaemshahr"
         }
     }
 }

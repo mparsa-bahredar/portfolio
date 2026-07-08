@@ -15,10 +15,10 @@ const HeroSection = () => {
             <div className="flex flex-col gap-8 order-1   lg:order-0">
                 <div className="flex flex-col gap-4">
                     <h1 className="font-bold text-[36px] text-[#F5F5F5]">{t("name")}</h1>
-                    <span className="font-medium text-[24px] text-[#0096C7]">{t("job")}</span>
+                    <span className="font-medium text-[24px] text-[#2196F3]">{t("job")}</span>
                 </div>
-                <button className="w-40 py-2 font-medium text-[16px] text-[#FFFFFF] bg-[#0096C7] rounded-full cursor-pointer
-                hover:bg-[#00789F]">
+                <button className="w-40 py-2 font-medium text-[16px] text-[#FFFFFF] bg-[#2196F3] rounded-full cursor-pointer
+                hover:bg-[#1A78C2]">
                     {t("contactMeBtn")}
                 </button>
             </div>
