@@ -23,6 +23,21 @@
             "highSchool": "School of Imam Jafar Sadegh",
             "bachelor": "Bachelor of Computer Engineering",
             "university": "University of Azad of Qaemshahr"
+        },
+        "skills":{
+            "title": "Skills",
+            "uiux": "UI/UX",
+            "figma": "Figma",
+            "ui": "UI",
+            "ux": "UX",
+            "frontEnd": "Front-End",
+            "backEnd": "Back-End"
+        },
+        "projects":{
+            "title": "Projects",
+            "uiux": "UI/UX",
+            "frontEnd": "Front-End",
+            "backEnd": "Back-End"
         }
     }
 }

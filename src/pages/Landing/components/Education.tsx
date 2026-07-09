@@ -12,12 +12,12 @@ const Education = () => {
         {
             title: t("diploma"),
             subtitle: t("highSchool"),
-            date: `${FormatDate("1398", locale)} - ${FormatDate("1401", locale)}`,
+            date: `${FormatDate("1398", locale, "year")} - ${FormatDate("1401", locale, "year")}`,
         },
         {
             title: t("bachelor"),
             subtitle: t("university"),
-            date: `${FormatDate("1402", locale)} -`,
+            date: `${FormatDate("1402", locale, "year")} -`,
         }
     ]
 

@@ -1,6 +1,8 @@
+import HeroSection from "../components/HeroSection"
 import AboutMe from "../components/AboutMe"
 import Education from "../components/Education"
-import HeroSection from "../components/HeroSection"
+import Skills from "../components/Skills"
+import Projects from "../components/Projects"
 
 
 
@@ -11,6 +13,8 @@ const LandingView = () => {
             <HeroSection/>
             <AboutMe/>
             <Education/>
+            <Skills/>
+            <Projects/>
         </div>
     )
 
