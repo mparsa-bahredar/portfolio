@@ -1,7 +1,6 @@
 "use client";
 import { useTheme } from "@/utils/helper/useTheme";
-import Sun from "../../../public/icons/Sun";
-import Moon from "../../../public/icons/Moon";
+import { Moon, Sun } from "lucide-react";
 
 
 const ToggleTheme = () => {
@@ -18,14 +17,14 @@ const ToggleTheme = () => {
         <div
           className="flex items-center justify-center w-10 h-10 text-[#FF8800] border border-[#FF8800] rounded-full transition-colors
           hover:text-[#FFFFFF] hover:bg-[#FF8800]">
-          <Sun className="w-5 h-5   md:w-6 md:h-6"/>
+            <Sun/>
         </div>
         ) : (
         <div
           className="flex items-center justify-center w-10 h-10 text-[#2196F3] border border-[#2196F3] rounded-full transition-all 
           duration-100 
           hover:text-[#FFFFFF] hover:bg-[#2196F3]">
-          <Moon className="w-5 h-5   md:w-6 md:h-6"/>
+            <Moon/>
         </div>
       )}
     </div>

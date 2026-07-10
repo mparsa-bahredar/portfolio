@@ -20,3 +20,16 @@
   display: none !important;
 }
 
+.custom-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d1d5db;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.custom-bullet-active {
+  width: 24px;
+  background: #2563eb;
+  border-radius: 4px;
+}

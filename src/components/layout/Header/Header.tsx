@@ -3,9 +3,9 @@ import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import HeaderMenu from "./HeaderMenu";
-import Menu from "../../../../public/icons/Menu";
 import ToggleTheme from "@/components/common/ToggleTheme";
 import ToggleLanguage from "@/components/common/ToggleLanguage";
+import { Menu } from "lucide-react";
 
 
 const Header = () => {

@@ -1,5 +1,6 @@
 "use client"
 import { Progress, ProgressLabel, ProgressValue } from "@/components/ui/progress"
+import { ChevronDown, ChevronUp } from "lucide-react"
 import { useTranslations } from "next-intl"
 import { useState } from "react"
 
@@ -64,7 +65,7 @@ const Skills = () => {
                         >
                             <h4 className="font-bold text-[20px] text-[#262626]">{item.title}</h4>
                             <span className="transition-transform duration-300 inline-block">
-                                {openDropdowns.includes(item.id) ? "▲" : "▼"}
+                                {openDropdowns.includes(item.id) ? <ChevronUp/> : <ChevronDown/>}
                             </span>
                         </div>
                         

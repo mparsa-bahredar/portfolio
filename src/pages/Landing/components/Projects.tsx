@@ -14,7 +14,7 @@ const Projects = () => {
     const tabs = [
         { id: 1, label: t("uiux") },
         { id: 2, label: t("frontEnd") },
-        { id: 3, label: t("backEnd") }
+        // { id: 3, label: t("backEnd") }
     ]
     const handleTabs = (tabId: number) => {
         setActiveTab(tabId)
@@ -22,7 +22,7 @@ const Projects = () => {
 
 
     return (
-        <div className="flex flex-col items-center gap-8 mt-10">
+        <div className="flex flex-col items-center gap-8 mt-10 px-12">
             <div dir="rtl" className="flex items-center gap-2">
                 <div className="w-0 h-0 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent border-l-[48px] 
                 border-l-[#2196F3] rounded-l-[16px]">
@@ -32,7 +32,7 @@ const Projects = () => {
                 border-r-[#2196F3] rounded-r-[16px]">
                 </div> 
             </div>  
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-2">
                 <div className="flex justify-start gap-6 w-full">
                     {
                         tabs.map((item) => (
@@ -47,7 +47,7 @@ const Projects = () => {
                 </div>
                 {activeTab === 1 ? <UIUXProjects/> : null}
                 {activeTab === 2 ? <FrontEndProjects/> : null}
-                {activeTab === 3 ? <BackEndProjects/> : null}
+                {/* {activeTab === 3 ? <BackEndProjects/> : null} */}
             </div>
         </div>
     )

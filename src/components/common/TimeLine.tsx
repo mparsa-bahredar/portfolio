@@ -1,5 +1,3 @@
-
-
 type TimelineItem = {
   title: string;
   subtitle?: string;
@@ -23,7 +21,7 @@ const Timeline = ({ items }: TimelineProps) => {
             className={`flex items-center relative ${index % 2 === 0 ? "justify-start" : "justify-end"}`}>
             <div className="h-5 w-5 bg-[#E4E4E4] -translate-x-1/2 rounded-full absolute left-1/2 z-10
             dark:bg-[#0D3C61]"/>
-            <div className="w-[calc(50%-2rem)] p-5 bg-[#E4E4E4] rounded-xl shadow   dark:bg-[#0D3C61]">
+            <div className="w-[calc(50%-2rem)] p-5 bg-[#FFFFFF] rounded-xl shadow-[0_4px_8px_rgba(0,0,0,0.04)]   dark:bg-[#0D3C61]">
               <h3 className="text-lg font-bold text-[#262626]   dark:text-[#F5F5F5]">{item.title}</h3>
               {item.subtitle && (
                 <p className="mt-2 text-sm text-[#262626]   dark:text-[#F5F5F5]">{item.subtitle}</p>
