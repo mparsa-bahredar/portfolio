@@ -1,3 +1,4 @@
+"use client"
 import { Mail } from "lucide-react";
 import { useLocale } from "next-intl"
 import LinkedIn from "../../../../public/icons/LinkedIn";
