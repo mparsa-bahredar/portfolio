@@ -9,7 +9,7 @@ const ContactMe = () => {
     const locale = useLocale();
 
     return (
-        <div className="flex flex-col items-center gap-8 mt-10">
+        <div className="flex flex-col items-center gap-12 mt-10">
             <div dir="rtl" className="flex items-center gap-2">
                 <div className="w-0 h-0 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent border-l-[48px] 
                 border-l-[#2196F3] rounded-l-[16px]">
@@ -20,35 +20,38 @@ const ContactMe = () => {
                 </div> 
             </div>  
             <div className="flex gap-6">
-                <div className="flex flex-col gap-4 w-80 px-4 pt-8 pb-4 bg-[#FFFFFF] rounded-[16px] relative">
-                    <h4 className="font-bold text-[20px] text-[#262626]">ایمیل</h4>
+                <div className="flex flex-col gap-6 w-80 p-4 bg-[#FFFFFF] rounded-[16px] relative shadow-[0_2px_4px_rgba(0,0,0,0.04)]">
+                    <div className="flex justify-between items-center">
+                        <h4 className="font-bold text-[20px] text-[#262626]">ایمیل</h4>
+                        <div className="p-3 text-[#EA4335] bg-[#EA4335]/16 rounded-[12px]">
+                            <Mail/>
+                        </div>
+                    </div>
                     <span className={`text-base text-[#525252] ${locale === "en" ? "text-right" : "text-left"}`}>
                         mparsabahredar@gmail.com
                     </span>
-                    <div className={`text-[#262626] p-4 bg-[#F5F5F5] rounded-[12px] absolute top-[-32px] 
-                    ${locale === "en" ? "left-4" : "right-4"}`}>
-                        <Mail/>
-                    </div>
                 </div>
-                <div className="flex flex-col gap-4 w-80 px-4 pt-8 pb-4 bg-[#FFFFFF] rounded-[16px] relative">
-                    <h4 className="font-bold text-[20px] text-[#262626]">لینکدین</h4>
+                <div className="flex flex-col gap-6 w-80 p-4 bg-[#FFFFFF] rounded-[16px] relative shadow-[0_2px_4px_rgba(0,0,0,0.04)]">
+                    <div className="flex justify-between items-center">
+                        <h4 className="font-bold text-[20px] text-[#262626]">لینکدین</h4>
+                        <div className="p-3 text-[#0A66C2] bg-[#0A66C2]/16 rounded-[12px]"> 
+                            <LinkedIn/>
+                        </div>
+                    </div>
                     <span className={`text-base text-[#525252] ${locale === "en" ? "text-right" : "text-left"}`}>
                         linkedin.com/in/parsa-bahredar
                     </span>
-                    <div className={`text-[#262626] p-4 bg-[#F5F5F5] rounded-[12px] absolute top-[-32px] 
-                    ${locale === "en" ? "left-4" : "right-4"}`}> 
-                        <LinkedIn/>
-                    </div>
                 </div>
-                <div className="flex flex-col gap-4 w-80 px-4 pt-8 pb-4 bg-[#FFFFFF] rounded-[16px] relative">
-                    <h4 className="font-bold text-[20px] text-[#262626]">تلگرام</h4>
-                    <span className={`text-base text-[#525252] ${locale === "en" ? "text-right" : "text-left"}`}>
-                        mparsa-bahredar@
-                    </span>
-                    <div className={`text-[#262626] p-4 bg-[#F5F5F5] rounded-[12px] absolute top-[-32px] 
-                    ${locale === "en" ? "left-4" : "right-4"}`}>
-                        <Telegram/>
+                <div className="flex flex-col gap-6 w-80 p-4 bg-[#FFFFFF] rounded-[16px] relative shadow-[0_2px_4px_rgba(0,0,0,0.04)]">
+                    <div className="flex justify-between items-center">
+                        <h4 className="font-bold text-[20px] text-[#262626]">تلگرام</h4>
+                        <div className="p-3 text-[#26A5E4] bg-[#26A5E4]/16 rounded-[12px]">
+                            <Telegram/>
+                        </div>
                     </div>
+                    <span className={`text-base text-[#525252] ${locale === "en" ? "text-right" : "text-left"}`}>
+                        mparsa_bahredar@
+                    </span>
                 </div>
             </div>
         </div>

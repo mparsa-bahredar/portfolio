@@ -26,7 +26,8 @@ const AboutMe = () => {
                     <div className="text-center leading-10   sm:text-right"> 
                         <p className="dark:text-[#E4E4E4]">{t("paragraph")}</p>
                     </div>
-                    <button className="w-40 py-2 font-medium text-[16px] text-[#FFFFFF] bg-[#2196F3] rounded-full cursor-pointer
+                    <button className="w-40 py-2 font-medium text-[16px] text-[#FFFFFF] bg-gradient-to-r from-[#1A78C2] to-[#2196F3] 
+                    rounded-full cursor-pointer
                     hover:bg-[#1A78C2]">
                         {t("downloadResume")}
                     </button>

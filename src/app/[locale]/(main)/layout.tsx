@@ -12,10 +12,10 @@ export default async function MainLayout({
 
   return (
       <div className="flex flex-col w-full">
-        <header className="w-full">
+        <header>
           <Header/>
         </header>
-          <main className="flex">
+          <main>
             {children}
           </main>
           <Footer/>

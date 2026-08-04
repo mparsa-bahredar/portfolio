@@ -4,7 +4,9 @@
 const Footer = () => {
 
     return (
-        <div></div>
+        <div className="bg-[#2196F3] mt-8">
+
+        </div>
     )
 
 }

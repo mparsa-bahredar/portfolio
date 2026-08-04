@@ -30,14 +30,13 @@ const Header = () => {
 
 
   return (
-    <>
-      <div className={`flex justify-between items-center w-full py-4 px-8 bg-[#F5F5F5] transition-all duration-300 fixed top-0 z-90
-      ${scrolled ? "shadow-[0_1px_4px_rgba(0,0,0,0.1)]" : ""}  
-      sm:px-24
-      lg:px-40
+    <div className="flex justify-center w-full">
+      <div className={`flex justify-between items-center w-[80%] py-4 px-4 bg-[#FFFFFF] border border-white/20 rounded-full 
+      shadow-[0_0_4px_rgba(0,0,0,0.1)] transition-all duration-300  
+      ${scrolled ? "fixed top-0 z-90" : "fixed top-4 z-90"}  
       dark:bg-[#030F18]`}>
         <div className="w-full">
-          <div className="block   sm:hidden" onClick={() => {handleToggleHeaderMenu(true)}}>
+          <div onClick={() => {handleToggleHeaderMenu(true)}} className="block   sm:hidden">
             <Menu/>
           </div>
           <div className={`hidden gap-8 font-medium text-[16px] text-[#262626]
@@ -58,7 +57,7 @@ const Header = () => {
       {
         isOpenHeaderMenu && <HeaderMenu handleToggleHeaderMenu={handleToggleHeaderMenu}/>
       }
-    </>
+    </div>
   );
 };
 

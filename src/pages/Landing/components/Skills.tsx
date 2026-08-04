@@ -56,9 +56,10 @@ const Skills = () => {
                 border-r-[#2196F3] rounded-r-[16px]">
                 </div> 
             </div>     
-            <div className="flex flex-col gap-10 w-160">
+            <div className="flex flex-col gap-10 w-200">
                 {skills.map((item) => (
-                    <div key={item.id} className="flex flex-col w-full">
+                    <div key={item.id} className="flex flex-col w-full bg-[#FFFFFF] px-6 py-4 rounded-full
+                    shadow-[0_2px_4px_rgba(0,0,0,0.04)]">
                         <div 
                             onClick={() => handleDropDown(item.id)}
                             className="flex justify-between w-full cursor-pointer select-none py-2"

@@ -2,7 +2,7 @@
 import { FormatDate } from "@/utils/helper/formatDate"
 import { useLocale } from "next-intl"
 import Image from "next/image"
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
@@ -15,8 +15,8 @@ const UIUXProjects = () => {
 
     const locale = useLocale();
     const isRTL = locale === 'fa';
-    const prevRef = useRef<HTMLButtonElement>(null)
-    const nextRef = useRef<HTMLButtonElement>(null)
+    const [prevEl, setPrevEl] = useState<HTMLButtonElement | null>(null)
+    const [nextEl, setNextEl] = useState<HTMLButtonElement | null>(null)
 
     const uiuxProjects = [
         {id: 1, title: "گالری گل ناز", description: "بهبود رابط و تجربه کاربری سایت گالری گل ناز", 
@@ -45,8 +45,8 @@ const UIUXProjects = () => {
                 dir={isRTL ? 'rtl' : 'ltr'}
                 autoplay={{ delay: 4000 }}
                 navigation={{
-                    prevEl: prevRef.current,
-                    nextEl: nextRef.current,
+                    prevEl,
+                    nextEl
                 }}
                 pagination={{
                     clickable: true,
@@ -55,12 +55,6 @@ const UIUXProjects = () => {
                 breakpoints={{
                     640: { slidesPerView: 2 },
                     1024: { slidesPerView: 3 },
-                }}
-                onBeforeInit={(swiper) => {
-                    if (swiper.params.navigation && typeof swiper.params.navigation === 'object') {
-                        swiper.params.navigation.prevEl = prevRef.current
-                        swiper.params.navigation.nextEl = nextRef.current
-                    }
                 }}
             >
                 {uiuxProjects.map((item) => (
@@ -88,13 +82,13 @@ const UIUXProjects = () => {
                 ))}
             </Swiper>
             <div className="custom-pagination flex justify-center gap-[6px] mt-4"></div>
-            <button ref={prevRef} className={`flex justify-center items-center w-12 h-12 -translate-y-1/2 bg-white/90 text-[#262626] 
+            <button ref={setPrevEl} className={`flex justify-center items-center w-12 h-12 -translate-y-1/2 bg-white/90 text-[#262626] 
             rounded-full shadow-[0_4px_4px_rgba(0,0,0,0.04)] absolute top-1/2 z-10
             hover:bg-[#FFFFFF]
             ${locale === "en" ? "left-[-6px]" : "right-[-6px]"}`}>
                 <ChevronRight/>
             </button>
-            <button ref={nextRef} className={`flex justify-center items-center w-12 h-12 -translate-y-1/2 bg-white/90 text-[#262626] 
+            <button ref={setNextEl} className={`flex justify-center items-center w-12 h-12 -translate-y-1/2 bg-white/90 text-[#262626] 
             rounded-full shadow-[0_4px_4px_rgba(0,0,0,0.04)] absolute top-1/2 z-10
             hover:bg-[#FFFFFF]
             ${locale === "en" ? "right-[-6px]" : "left-[-6px]"}`}>
