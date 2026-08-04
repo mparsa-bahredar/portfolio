@@ -1,3 +1,4 @@
+"use client"
 import HeroSection from "../components/HeroSection"
 import AboutMe from "../components/AboutMe"
 import Education from "../components/Education"

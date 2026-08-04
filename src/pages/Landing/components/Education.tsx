@@ -1,3 +1,4 @@
+"use client"
 import Timeline from "@/components/common/TimeLine"
 import { FormatDate } from "@/utils/helper/formatDate"
 import { useLocale, useTranslations } from "next-intl"
