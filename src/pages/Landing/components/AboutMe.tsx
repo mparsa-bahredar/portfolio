@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
 import Me2 from "../../../../public/images/me2.png"
-import { useLocale, useTranslations } from "next-intl"
+import { useTranslations } from "next-intl"
 
 
 const AboutMe = () => {
