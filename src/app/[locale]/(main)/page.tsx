@@ -1,4 +1,4 @@
-import LandingView from "@/pages/Landing/view/LandingView"
+import LandingView from "@/modules/Landing/view/LandingView"
 
 
 
