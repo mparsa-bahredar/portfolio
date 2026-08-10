@@ -38,28 +38,27 @@ const UIUXProjects = () => {
     return (
         <div className="w-full max-w-6xl mx-auto px-4 py-8 relative">
             <Swiper
-                modules={[Navigation, Pagination, Autoplay]}
-                spaceBetween={16}
-                slidesPerView={3.4}
-                loop={true}
-                dir={isRTL ? 'rtl' : 'ltr'}
-                autoplay={{ delay: 4000 }}
-                navigation={{
-                    prevEl,
-                    nextEl
-                }}
-                pagination={{
-                    clickable: true,
-                    el: '.custom-pagination',
-                }}
-                breakpoints={{
-                    640: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 },
-                }}
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={16}
+            slidesPerView={1.15}
+            loop
+            dir={isRTL ? "rtl" : "ltr"}
+            autoplay={{ delay: 4000 }}
+            navigation={{ prevEl, nextEl }}
+            pagination={{
+                clickable: true,
+                el: ".custom-pagination",
+            }}
+            breakpoints={{
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+            }}
+            className="w-full"
             >
                 {uiuxProjects.map((item) => (
                     <SwiperSlide key={item.id}>
-                        <div className="flex flex-col w-full h-80 mb-2 bg-[#FFFFFF] rounded-[12px] shadow-[0_4px_4px_rgba(0,0,0,0.04)]">
+                        <div className="flex flex-col w-full h-80 mb-2 bg-[#FFFFFF] rounded-[12px] shadow-[0_4px_4px_rgba(0,0,0,0.04)]
+                        dark:bg-[#0D3C61]">
                             <Image
                                 src="/placeholder.jpg"
                                 width={320}
@@ -69,11 +68,11 @@ const UIUXProjects = () => {
                             />
                             <div className="flex flex-col justify-between h-full p-4">
                                 <div className="flex flex-col gap-2">
-                                    <h4 className="font-bold text-base text-[#262626]">{item.title}</h4>
-                                    <p className="text-sm text-[#525252]">{item.description}</p>
+                                    <h4 className="font-bold text-base text-[#262626]   dark:text-[#FFFFFF]">{item.title}</h4>
+                                    <p className="text-sm text-[#525252]   dark:text-[#E4E4E4]">{item.description}</p>
                                 </div>
-                                <div className="flex items-center gap-2">
-                                    <CalendarDays width={16} height={16} color="#525252"/>
+                                <div className="flex items-center gap-2   dark:text-[#E4E4E4]">
+                                    <CalendarDays width={16} height={16}/>
                                     <span className="text-xs text-[#525252]">{item.date}</span>
                                 </div>
                             </div>
@@ -85,14 +84,14 @@ const UIUXProjects = () => {
             <button ref={setPrevEl} className={`flex justify-center items-center w-12 h-12 -translate-y-1/2 bg-white/90 text-[#262626] 
             rounded-full shadow-[0_4px_4px_rgba(0,0,0,0.04)] absolute top-1/2 z-10
             hover:bg-[#FFFFFF]
-            ${locale === "en" ? "left-[-6px]" : "right-[-6px]"}`}>
-                <ChevronRight/>
+            ${locale === "en" ? "right-[-6px]" : "left-[-6px]"}`}>
+                <ChevronRight className={`${locale === "en" ? "" : "rotate-180"}`}/>
             </button>
             <button ref={setNextEl} className={`flex justify-center items-center w-12 h-12 -translate-y-1/2 bg-white/90 text-[#262626] 
             rounded-full shadow-[0_4px_4px_rgba(0,0,0,0.04)] absolute top-1/2 z-10
             hover:bg-[#FFFFFF]
-            ${locale === "en" ? "right-[-6px]" : "left-[-6px]"}`}>
-                <ChevronLeft/>
+            ${locale === "en" ? "left-[-6px]" : "right-[-6px]"}`}>
+                <ChevronLeft className={`${locale === "en" ? "" : "rotate-180"}`}/>
             </button>
         </div>
     )

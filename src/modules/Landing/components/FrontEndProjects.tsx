@@ -57,7 +57,8 @@ const FrontEndProjects = () => {
             >
                 {frontEndProjects.map((item) => (
                     <SwiperSlide key={item.id}>
-                        <div className="flex flex-col w-full h-80 mb-2 bg-[#FFFFFF] rounded-[12px] shadow-[0_4px_4px_rgba(0,0,0,0.04)]">
+                        <div className="flex flex-col w-full h-80 mb-2 bg-[#FFFFFF] rounded-[12px] shadow-[0_4px_4px_rgba(0,0,0,0.04)]
+                        dark:bg-[#0D3C61]">
                             <Image
                                 src="/placeholder.jpg"
                                 width={320}
@@ -67,12 +68,12 @@ const FrontEndProjects = () => {
                             />
                             <div className="flex flex-col justify-between h-full p-4">
                                 <div className="flex flex-col gap-2">
-                                    <h4 className="font-bold text-base text-[#262626]">{item.title}</h4>
-                                    <p className="text-sm text-[#525252]">{item.description}</p>
+                                    <h4 className="font-bold text-base text-[#262626]   dark:text-[#FFFFFF]">{item.title}</h4>
+                                    <p className="text-sm text-[#525252]   dark:text-[#E4E4E4]">{item.description}</p>
                                 </div>
-                                <div className="flex items-center gap-2">
-                                    <CalendarDays width={16} height={16} color="#525252"/>
-                                    <span className="text-xs text-[#525252]">{item.date}</span>
+                                <div className="flex items-center gap-2   dark:text-[#E4E4E4]">
+                                    <CalendarDays width={16} height={16}/>
+                                    <span className="text-xs text-[#525252]   dark:text-[#E4E4E4]">{item.date}</span>
                                 </div>                            
                             </div>
                         </div>

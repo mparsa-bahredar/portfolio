@@ -21,11 +21,18 @@ const HeroSection = () => {
                         {t("job")}
                     </span>
                 </div>
-                <button className="w-40 py-2 font-medium text-[16px] text-[#FFFFFF] bg-gradient-to-r from-[#1A78C2] to-[#2196F3]
-                rounded-full cursor-pointer
-                hover:bg-[#1A78C2]">
-                    {t("contactMeBtn")}
-                </button>
+                <div className="flex items-center gap-3">
+                    <button className="w-44 py-2 font-medium text-[16px] text-[#FFFFFF] bg-gradient-to-r from-[#1A78C2] to-[#2196F3]
+                    rounded-full cursor-pointer">
+                        {t("contactMeBtn")}
+                    </button>
+                    <a href="/MParsaBahredar(Front-End).pdf" className="px-4 py-2 font-medium text-[16px] text-[#2196F3] border border-[#2196F3] 
+                    rounded-full cursor-pointer
+                    hover:bg-[#FFFFFF]
+                    dark:hover:bg-[#0D3C61]">
+                        {t("downloadResume")}
+                    </a>
+                </div>
             </div>
             <div className="relative w-fit order-0   lg:order-1">
                 <Image src={MadeImage} alt="MohammadParsaBahredar" width={360} height={280} className={`rounded-full 

@@ -22,7 +22,7 @@ const Projects = () => {
 
 
     return (
-        <div className="flex flex-col items-center gap-8 mt-10 px-12">
+        <div className="flex flex-col items-center gap-8 w-full mt-10 px-4   sm:px-6   lg:px-12">
             <div dir="rtl" className="flex items-center gap-2">
                 <div className="w-0 h-0 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent border-l-[48px] 
                 border-l-[#2196F3] rounded-l-[16px]">
@@ -32,12 +32,12 @@ const Projects = () => {
                 border-r-[#2196F3] rounded-r-[16px]">
                 </div> 
             </div>  
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 w-full max-w-6xl">
                 <div className="flex justify-start gap-6 w-full">
                     {
                         tabs.map((item) => (
                             <div onClick={() => {handleTabs(item.id)}} key={item.id} className="flex flex-col gap-2 cursor-pointer">
-                                <h4 className={item.id === activeTab ? "font-medium text-[#2196F3]" : "text-[#262626]"}>
+                                <h4 className={item.id === activeTab ? "font-medium text-[#2196F3]" : "text-[#262626]   dark:text-[#F5F5F5]"}>
                                     {item.label}
                                 </h4>
                                 {item.id === activeTab ? <div className="w-full h-1 rounded-full bg-[#2196F3]"></div> : null}

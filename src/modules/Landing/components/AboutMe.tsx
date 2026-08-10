@@ -1,13 +1,14 @@
 "use client"
 import Image from "next/image"
 import Me2 from "../../../../public/images/me2.png"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 
 
 const AboutMe = () => {
 
 
     const t = useTranslations("landing.aboutMe");
+    const locale = useLocale();
 
     return (
         <div id="about-me" className="flex flex-col items-center gap-12 w-full mt-20 px-8   sm:px-40">
@@ -23,15 +24,8 @@ const AboutMe = () => {
             <div className="flex flex-col items-center gap-12   sm:flex-row">
                 <Image src={Me2} alt="MohammadParsaBahredar" className="w-[240px] h-[240px]      
                 sm:w-[300px] sm:h-[280px]"/>
-                <div className="flex flex-col items-center gap-4   sm:items-start">
-                    <div className="text-center leading-10   sm:text-right"> 
-                        <p className="dark:text-[#E4E4E4]">{t("paragraph")}</p>
-                    </div>
-                    <button className="w-40 py-2 font-medium text-[16px] text-[#FFFFFF] bg-gradient-to-r from-[#1A78C2] to-[#2196F3] 
-                    rounded-full cursor-pointer
-                    hover:bg-[#1A78C2]">
-                        {t("downloadResume")}
-                    </button>
+                <div className={`text-center leading-10   ${locale === "en" ? "sm:text-left" : "sm:text-right"}`}> 
+                    <p className="dark:text-[#E4E4E4]">{t("paragraph")}</p>
                 </div>
             </div>
         </div>
