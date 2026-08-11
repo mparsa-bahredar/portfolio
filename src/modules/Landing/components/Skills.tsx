@@ -46,7 +46,7 @@ const Skills = () => {
     }
 
     return (
-        <div className="flex flex-col items-center gap-12 w-full mt-20">
+        <div className="flex flex-col items-center gap-12 w-full mt-20 px-4   sm:px-12">
             <div dir="rtl" className="flex items-center gap-2">
                 <div className="w-0 h-0 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent border-l-[48px] 
                 border-l-[#2196F3] rounded-l-[16px]">
@@ -56,7 +56,7 @@ const Skills = () => {
                 border-r-[#2196F3] rounded-r-[16px]">
                 </div> 
             </div>     
-            <div className="flex flex-col gap-10   sm:w-80   md:w-120   lg:w-200">
+            <div className="flex flex-col gap-10 w-full   md:w-160   lg:w-200">
                 {skills.map((item) => (
                     <div key={item.id} className="flex flex-col w-full bg-[#FFFFFF] px-6 py-4 rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.04)]
                     dark:text-[#FFFFFF] dark:bg-[#0D3C61]">

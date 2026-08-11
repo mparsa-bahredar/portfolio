@@ -15,20 +15,27 @@ const HeroSection = () => {
         lg:flex-row">
             <div className="flex flex-col items-center gap-12 order-1   lg:items-start lg:order-0">
                 <div className="flex flex-col items-center gap-4   lg:items-start">
-                    <h1 className="font-bold text-[36px] text-[#262626]   dark:text-[#FFFFFF]">{t("name")}</h1>
-                    <span className={`font-medium text-[24px] text-[#2196F3] text-center   
+                    <h1 className={`font-bold text-[32px] text-center text-[#262626]   
+                    dark:text-[#FFFFFF]  
+                    sm:text-[36px] 
+                    ${locale === "en" ? "sm:text-left" : "sm:text-right"}`}>
+                        {t("name")}
+                    </h1>
+                    <span className={`font-regular text-[24px] text-[#2196F3] text-center   
                     ${locale === "en" ? "lg:text-left" : "lg:text-right"}`}>
                         {t("job")}
                     </span>
                 </div>
-                <div className="flex items-center gap-3">
-                    <button className="w-44 py-2 font-medium text-[16px] text-[#FFFFFF] bg-gradient-to-r from-[#1A78C2] to-[#2196F3]
-                    rounded-full cursor-pointer">
+                <div className="flex flex-col items-center gap-4   sm:flex-row sm:gap-3">
+                    <button className="w-44 py-2 font-medium text-[14px] text-[#FFFFFF] bg-gradient-to-r from-[#1A78C2] to-[#2196F3]
+                    rounded-full cursor-pointer
+                    sm:text-[16px]">
                         {t("contactMeBtn")}
                     </button>
-                    <a href="/MParsaBahredar(Front-End).pdf" className="px-4 py-2 font-medium text-[16px] text-[#2196F3] border border-[#2196F3] 
+                    <a href="/MParsaBahredar(Front-End).pdf" className="px-6.5 py-2 font-medium text-[14px] text-[#2196F3] border border-[#2196F3] 
                     rounded-full cursor-pointer
                     hover:bg-[#FFFFFF]
+                    sm:px-4 sm:text-[16px]
                     dark:hover:bg-[#0D3C61]">
                         {t("downloadResume")}
                     </a>

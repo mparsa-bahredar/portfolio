@@ -22,7 +22,7 @@ const Projects = () => {
 
 
     return (
-        <div className="flex flex-col items-center gap-8 w-full mt-10 px-4   sm:px-6   lg:px-12">
+        <div className="flex flex-col items-center gap-8 w-full mt-10 px-4   sm:px-12">
             <div dir="rtl" className="flex items-center gap-2">
                 <div className="w-0 h-0 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent border-l-[48px] 
                 border-l-[#2196F3] rounded-l-[16px]">

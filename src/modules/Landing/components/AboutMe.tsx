@@ -11,7 +11,7 @@ const AboutMe = () => {
     const locale = useLocale();
 
     return (
-        <div id="about-me" className="flex flex-col items-center gap-12 w-full mt-20 px-8   sm:px-40">
+        <div id="about-me" className="flex flex-col items-center gap-12 w-full mt-20 px-4   sm:px-40">
             <div dir="rtl" className="flex items-center gap-2">
                 <div className="w-0 h-0 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent border-l-[48px] 
                 border-l-[#2196F3] rounded-l-[16px]">

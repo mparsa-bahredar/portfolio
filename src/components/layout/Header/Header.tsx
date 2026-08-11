@@ -36,7 +36,7 @@ const Header = () => {
       ${scrolled ? "fixed top-0 z-90" : "fixed top-4 z-90"}  
       dark:bg-[#030F18]`}>
         <div className="w-full">
-          <div onClick={() => {handleToggleHeaderMenu(true)}} className="block   sm:hidden">
+          <div onClick={() => {handleToggleHeaderMenu(true)}} className="block   sm:hidden   dark:text-[#FFFFFF]">
             <Menu/>
           </div>
           <div className={`hidden gap-8 font-medium text-[16px] text-[#262626]

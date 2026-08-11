@@ -18,7 +18,7 @@ const ContactMe = () => {
 
 
     return (
-        <div className="flex flex-col items-center gap-12 mt-10">
+        <div className="flex flex-col items-center gap-12 mt-10 px-4   sm:px-12">
             <div dir="rtl" className="flex items-center gap-2">
                 <div className="w-0 h-0 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent border-l-[48px] 
                 border-l-[#2196F3] rounded-l-[16px]">
@@ -31,8 +31,9 @@ const ContactMe = () => {
             <div className="flex flex-col gap-6   md:flex-row">
                 {
                     contactMeData.map((item) => (
-                        <div key={item.id} className="flex flex-col gap-6 w-80 p-4 bg-[#FFFFFF] rounded-[16px] relative 
+                        <div key={item.id} className="flex flex-col gap-6 w-full p-4 bg-[#FFFFFF] rounded-[16px] relative 
                         shadow-[0_2px_4px_rgba(0,0,0,0.04)]
+                        lg:w-80
                         dark:bg-[#FFFFFF]/8">
                             <div className="flex justify-between items-center">
                                 <h4 className="font-bold text-[20px] text-[#262626]   dark:text-[#FFFFFF]">{item.title}</h4>
