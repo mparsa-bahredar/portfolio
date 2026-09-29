@@ -18,7 +18,7 @@ const ContactMe = () => {
 
 
     return (
-        <div className="flex flex-col items-center gap-12 mt-10 px-4   sm:px-12">
+        <div className="flex flex-col items-center gap-12 mt-24 px-4   sm:px-12">
             <div dir="rtl" className="flex items-center gap-2">
                 <div className="w-0 h-0 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent border-l-[48px] 
                 border-l-[#2196F3] rounded-l-[16px]">

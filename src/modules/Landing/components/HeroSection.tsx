@@ -10,7 +10,7 @@ const HeroSection = () => {
     const locale = useLocale();
 
     return (
-        <section className="flex flex-col justify-between items-center gap-8 pt-40 pb-28 px-16 
+        <section className="flex flex-col justify-between items-center gap-8 mt-40 px-16 
         sm:px-40   
         lg:flex-row">
             <div className="flex flex-col items-center gap-12 order-1   lg:items-start lg:order-0">
