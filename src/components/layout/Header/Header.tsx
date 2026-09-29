@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <div className="flex justify-center w-full">
-      <div className={`flex justify-between items-center w-[80%] py-4 px-4 bg-[#FFFFFF] border border-white/20 rounded-full 
+      <div className={`flex justify-between items-center w-[80%] pr-4 pl-12 py-4 bg-[#FFFFFF] border border-white/20 rounded-full 
       shadow-[0_0_4px_rgba(0,0,0,0.1)] transition-all duration-300  
       ${scrolled ? "fixed top-0 z-90" : "fixed top-4 z-90"}  
       dark:bg-[#030F18]`}>
